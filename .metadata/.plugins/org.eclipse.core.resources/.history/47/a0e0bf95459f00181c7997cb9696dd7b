@@ -6,8 +6,8 @@ public class mainArray {
 		
 		int testArray[] = new  int[10];
 		
-		testArray[0] = 87;
-		testArray[1] = 70;
+		testArray[0] 87;
+		testArray[1] 70;
 		
 		
 		
