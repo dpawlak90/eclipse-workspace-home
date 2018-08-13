@@ -14,7 +14,7 @@ public class mainArray {
 		System.out.println("test array 1: " + testArray[0]);
 	
 		
-		//this is a test
+		
 		
 	}
 	
