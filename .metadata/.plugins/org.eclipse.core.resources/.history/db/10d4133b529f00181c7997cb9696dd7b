@@ -68,21 +68,11 @@ public class BlackJackMain {
 	}
 	
 	
-	public static void playGame(int bet) {
+	public static void playGame() {
 		
-		int card1 = randomNumber();
-		int card2 = randomNumber();
+		
 		String cardName[] = new String[52];
 		int cardValue[] = new int[52];
-		boolean cardUsed[] = new boolean[52];
-		
-		
-		for(int i =1 ; i < 53 ; i++) {
-			
-			cardUsed[i] = true;
-			
-		}
-		
 		
 		
 		cardName[1] = "Ace of Clubs";
@@ -139,66 +129,20 @@ public class BlackJackMain {
 		cardName[51] = "king of Spades";
 		
 		
-		cardValue[1] = 1;
-		cardValue[2] = 2;
-		cardValue[3] = 3;
-		cardValue[4] = 4;
-		cardValue[5] = 5;
-		cardValue[6] = 6;
-		cardValue[7] = 7;
-		cardValue[8] = 8;
-		cardValue[9] = 9;
-		cardValue[10] = 10;
-		cardValue[11] = 11;
-		cardValue[12] = 12;
-		cardValue[13] = 13;
-		cardValue[14] = 1;
-		cardValue[15] = 2;
-		cardValue[16] = 3;
-		cardValue[17] = 4;
-		cardValue[18] = 5;
-		cardValue[19] = 6;
-		cardValue[20] = 7;
-		cardValue[21] = 8;
-		cardValue[23] = 10;
-		cardValue[24] = 11;
-		cardValue[25] = 12;
-		cardValue[26] = 13;
-		cardValue[27] = 1;
-		cardValue[28] = 2;
-		cardValue[29] = 3;
-		cardValue[30] = 4;
-		cardValue[31] = 5;
-		cardValue[32] = 6;
-		cardValue[33] = 7;
-		cardValue[34] = 8;
-		cardValue[35] = 9;
-		cardValue[36] = 10;
-		cardValue[37] = 11;
-		cardValue[38] = 12;
-		cardValue[39] = 13;
-		cardValue[40] = 1;
-		cardValue[41] = 2;
-		cardValue[42] = 3;
-		cardValue[43] = 4;
-		cardValue[44] = 5;
-		cardValue[45] = 6;
-		cardValue[46] = 7;
-		cardValue[47] = 8;
-		cardValue[48] = 9;
-		cardValue[49] = 10;
-		cardValue[50] = 11;
-		cardValue[51] = 12;
-		cardValue[51] = 13;
-	
+		for(int i = 1; i < 13 ;i++){
+			
+			cardValue[i] = i;
+			
+			System.out.println(i);
+		}
+		
+		
 		
 		
 		
 		System.out.println( "lets play the game! the bet is: $" + bet);
 		
-		
-		System.out.println("Your first card is: "+cardName[card1] + ", the vaule is: " + cardValue[card1]);
-		System.out.println("Your first card is: "+cardName[card2] + ", the vaule is: " + cardValue[card2]);
+		System.out.println(cardName[randomNumber()]);
 	}
 	
 	
@@ -207,14 +151,6 @@ public class BlackJackMain {
 		return(int) (Math.random() * (52 - 1 + 1)) + 1;
 		
 	}
-	
-	public static int checkCardUsed(int check) {
-	
-		
-		return check;
-	}
-	
-	
 	
 	
 	

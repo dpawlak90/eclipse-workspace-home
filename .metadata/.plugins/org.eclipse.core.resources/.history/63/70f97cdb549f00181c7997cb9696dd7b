@@ -68,21 +68,11 @@ public class BlackJackMain {
 	}
 	
 	
-	public static void playGame(int bet) {
+	public static void playGame() {
 		
-		int card1 = randomNumber();
-		int card2 = randomNumber();
+		int card = randomNumber();
 		String cardName[] = new String[52];
 		int cardValue[] = new int[52];
-		boolean cardUsed[] = new boolean[52];
-		
-		
-		for(int i =1 ; i < 53 ; i++) {
-			
-			cardUsed[i] = true;
-			
-		}
-		
 		
 		
 		cardName[1] = "Ace of Clubs";
@@ -197,8 +187,7 @@ public class BlackJackMain {
 		System.out.println( "lets play the game! the bet is: $" + bet);
 		
 		
-		System.out.println("Your first card is: "+cardName[card1] + ", the vaule is: " + cardValue[card1]);
-		System.out.println("Your first card is: "+cardName[card2] + ", the vaule is: " + cardValue[card2]);
+		System.out.println("Your first card is: "+cardName[card] + ", the vaule is: " + cardValue[card]);
 	}
 	
 	
@@ -207,14 +196,6 @@ public class BlackJackMain {
 		return(int) (Math.random() * (52 - 1 + 1)) + 1;
 		
 	}
-	
-	public static int checkCardUsed(int check) {
-	
-		
-		return check;
-	}
-	
-	
 	
 	
 	
